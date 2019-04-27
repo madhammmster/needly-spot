@@ -1,0 +1,27 @@
+@import "../Menu/Menu.scss";
+
+body {
+  background-color: #fff;
+  font-weight: 300;
+}
+
+a{
+  color: inherit !important;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+}
+
+.app {
+  width: calc(100% - #{$menu-width});
+}
+
+.route {
+  
+  padding: 50px 50px 0 50px;
+  overflow: auto;
+  height: 100vh;
+  min-height: 100vh;
+}
