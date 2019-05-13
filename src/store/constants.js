@@ -13,6 +13,7 @@ export const SET_DOCUMENTS = 'SET_DOCUMENTS';
 
 //places
 export const SET_PLACES = 'SET_PLACES';
+export const SET_PLACE = 'SET_PLACE';
 
 //add place
 export const SET_TYPE = 'SET_TYPE';

@@ -30,10 +30,10 @@ class App extends Component {
         items={
           [
             { label: 'Mapa', path: '/' },
-            { label: 'Miejsca', path: '/places' },
+            // { label: 'Miejsca', path: '/places' },
             { label: 'Dodaj miejsce', path: '/add-place' },
             { label: 'Moje miejsca', path: '/my-places' },
-            { label: 'Kontakt', path: '/contact' }
+            // { label: 'Kontakt', path: '/contact' }
           ]
         }
       />

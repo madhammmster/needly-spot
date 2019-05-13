@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { Container, Header, Icon } from 'semantic-ui-react';
@@ -33,6 +34,8 @@ class AddPlace extends Component {
 
         console.log('values', values);
         console.log('user:uid', uid);
+
+        values['uuid'] = uuid(); 
 
         showFader();
         this.addDocument(values);

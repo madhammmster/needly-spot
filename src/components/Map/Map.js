@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import GoogleMapReact from 'google-map-react';
-
-const AnyReactComponent = () => <i style={{ fontSize: '28px' }} className="logo fas fa-beer"></i>;
+import Place from './components/Place';
 
 const styles = [
     {
@@ -204,11 +203,11 @@ class Map extends Component {
                 >
                     {places.map((place) => {
                         return (
-                            <AnyReactComponent
-                                key={place.longitude}
+                            <Place
+                                key={place.uuid}
                                 lat={place.latitude}
                                 lng={place.longitude}
-                                text="My Marker"
+                                place={place}
                             />
 
                         )
