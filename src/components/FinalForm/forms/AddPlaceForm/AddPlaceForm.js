@@ -260,11 +260,38 @@ class AddPlaceForm extends React.Component {
                     (
                         <Form className='document-form' onSubmit={handleSubmit}>
 
-                            <Divider />
+                            {/* <Divider /> */}
 
                             <TypeEmmiter
                                 selectedType={values.type}
                             />
+
+                            
+                            <FinalField
+                                component={TextFieldAdapter}
+                                validate={required}
+                                name='name'
+                                label='Nazwa'
+                                placeholder='Nazwa'
+
+
+                            />
+
+                            
+
+                            <FinalField
+                                component={TextAreaFieldAdapter}
+                                validate={required}
+                                name='description'
+                                label='Opis'
+                                placeholder='Opis'
+
+
+                            />
+
+                            <Divider />
+
+                            
 
                             <Form.Group  >
                                 <FinalField

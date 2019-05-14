@@ -15,6 +15,7 @@ import './App.scss';
 import { startApp } from '../../store/reducers/appReducer';
 import Menu from '../Menu/Menu';
 import AddPlace from '../../routes/AddPlace/AddPlace';
+import MyPlaces from '../../routes/MyPlaces/MyPlaces';
 
 
 class App extends Component {
@@ -58,6 +59,11 @@ class App extends Component {
             <Route
               path='/login'
               component={Login}
+            />
+
+            <Route
+              path='/my-places'
+              component={MyPlaces}
             />
 
             <Route

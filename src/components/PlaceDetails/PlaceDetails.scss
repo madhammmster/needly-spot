@@ -1,0 +1,22 @@
+.container-place-details {
+  position: absolute;
+  right: -30%;
+  top: 0;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 100%;
+  z-index: 9998;
+  padding: 10px;
+  padding-top: 50px;
+  overflow: auto;
+
+  transition: all 0.3s;
+
+  &.visible {
+    right: 0;
+  }
+
+  .container-description {
+    padding-top: 100px;
+  }
+}

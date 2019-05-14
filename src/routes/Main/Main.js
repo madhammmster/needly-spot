@@ -6,6 +6,7 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import { setPlaces } from '../../store/reducers/placesReducer';
 
 import './Main.scss';
+import PlaceDetails from '../../components/PlaceDetails/PlaceDetails';
 
 class Main extends Component {
 
@@ -47,8 +48,10 @@ class Main extends Component {
 
         return (
             <div className='route main-route' >
+                <PlaceDetails />
                 <SearchBar />
                 <Map />
+                
             </div>
         );
     }
